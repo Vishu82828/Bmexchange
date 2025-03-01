@@ -1,0 +1,116 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    padding: 10px 5%;
+    /* background-color: black; */
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .logo-container img {
+    width: 80px;
+    height: 80px;
+    transform: rotate(-30deg);
+  }
+  
+  .logo-container label {
+    color: white;
+    margin-left: 10px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    list-style-type: none;
+    color: white;
+    margin: 10px 20px;
+    font-weight: bold;
+    padding: 5px 0;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .nav-links li:hover {
+    border-bottom: 2px solid white;
+  }
+  
+  .contact-btn {
+    padding: 10px 15px;
+    margin-left: 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font-weight: bold;
+    color: rgb(201, 7, 201);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .contact-btn:hover {
+    background-color: rgb(201, 7, 201);
+    color: white;
+  }
+  
+  .contact-btn:focus {
+    outline: none;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contact-btn{
+        display: none;
+    }
+    .hamburger {
+      display: block;
+    }
+    
+    .nav-links {
+      z-index: 10;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.9);
+      width: 35%;
+      padding: 10px;
+      text-align: center;
+      border-radius: 20px;
+    }
+    
+    .nav-open .nav-links {
+      display: flex;
+    }
+  }

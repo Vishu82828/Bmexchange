@@ -1,0 +1,138 @@
+.footerContainer {
+    background-color: #3d017a;
+    color: white;
+    font-size: 16px;
+    margin-top: 100px;
+  }
+  
+  .footer {
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+  }
+  
+  .footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer li {
+    margin: 20px 0;
+    cursor: pointer;
+  }
+  
+  .footer li:hover {
+    color: rgb(44, 241, 248);
+  }
+  
+  .logos, .imp, .useful, .subscribe {
+    width: 300px;
+    padding: 20px 30px;
+  }
+  
+  .logos {
+    text-align: center;
+  }
+  
+  .logos .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logos .brand h2 {
+    font-size: 2.5rem;
+  }
+  
+  .logos p {
+    color: white;
+  }
+  
+  .logos h3{
+    margin-top: 9%;
+  }
+  
+  .logos img {
+    width: 145px;
+    height: 100px;
+  }
+  
+  .social-icons span {
+    margin: 0 5px;
+    border: 2px solid white;
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    padding: 10px 11px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .social-icons span:hover {
+    color: rgb(44, 241, 248);
+  }
+  
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+  
+  .subscribe p {
+    margin: 25px 0;
+    color: white;
+  }
+  
+  .subscribe input {
+    width: 280px;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+  }
+  
+  .subscribe input:focus,
+  .subscribe button:focus {
+    outline: none;
+  }
+  
+  .subscribe button {
+    margin: 10px 0;
+    border-radius: 50px;
+    color: #3d017a;
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .subscribe button:hover {
+    box-shadow: 2px 2px 10px #ffffff;
+    /* opacity: 80%; */
+    /* color: aliceblue; */
+  }
+  
+  hr {
+    background-color: lightgrey;
+  }
+  
+  .copyright p {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 1000px) {
+    .footer {
+      justify-content: left;
+      padding: 12vh 0;
+      flex-wrap: wrap;
+    }
+  
+    .logos {
+      text-align: left;
+    }
+  }
+  

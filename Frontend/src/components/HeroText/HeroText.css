@@ -1,0 +1,97 @@
+.introduction {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  max-width: 550px;
+  color: white;
+}
+
+.introduction h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+.introduction p {
+  font-size: 16px;
+  color: white;
+}
+
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 4%;
+}
+
+.introduction button {
+  font-size: 16px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  background-color: rgb(222, 222, 222);
+  color: purple;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.introduction button:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .introduction {
+    left: 3%;
+    max-width: 80%;
+  }
+
+  .introduction h1 {
+    font-size: 2rem;
+  }
+
+  .introduction p {
+    font-size: 14px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .introduction button {
+    width: 100%;
+    padding: 12px 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .introduction {
+    left: 2%;
+    top: 20%;
+    padding: 0 10px;
+    text-align: left;
+  }
+
+  .introduction h1 {
+    font-size: 1.8rem;
+  }
+
+  .introduction p {
+    font-size: 13px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .introduction button {
+    width: 90%;
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+}

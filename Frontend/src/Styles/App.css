@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.App {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  color: rgb(54, 54, 54);
+}
+
+.overlay {
+  width: 100%;
+  height: 110vh;
+  overflow: hidden;
+  background-image: url(../image/curve.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+}
+
+.image {
+  width: 850px;
+  height: inherit;
+  position: absolute;
+  top: 17%;
+  right: 0;
+  left: 38%;
+}
+
+.image > img {
+  width: inherit;
+  cursor: pointer;
+  height: inherit;
+}
+
+@media screen and (max-width: 800px) {
+  .image {
+    display: none;
+  }
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  

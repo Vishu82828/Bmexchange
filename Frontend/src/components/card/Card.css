@@ -1,0 +1,26 @@
+.card {
+    text-align: center;
+    margin: 5px 20px;
+    padding: 50px 30px;
+    transition: all 0.8s linear 0s;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    border: 1px solid rgb(235, 232, 232);
+    box-shadow: 4px 4px 20px lightgrey;
+  }
+  
+  .card .card-heading {
+    font-size: 1.4em;
+  }
+  
+  .card .card-heading:hover {
+    color: rgb(214, 5, 214);
+  }
+  
+  .card .card-info {
+    font-size: 16px;
+  }
+  

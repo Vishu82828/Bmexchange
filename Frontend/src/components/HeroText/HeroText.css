@@ -9,11 +9,13 @@
 .introduction h1 {
   font-size: 3rem;
   color: white;
+  margin-left: 5%;
 }
 
 .introduction p {
   font-size: 16px;
   color: white;
+  margin-left: 5%;
 }
 
 .buttons {
@@ -21,7 +23,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-left: 4%;
+  margin-left: 5%;
 }
 
 .introduction button {
@@ -77,7 +79,7 @@
   }
 
   .introduction h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .introduction p {

@@ -19,6 +19,10 @@ const Box2 = () => {
   });
 
   return (
+    <>
+    <div className="contact-introduction">
+        <h1>How it Work</h1>
+      </div>
     <div className="box">
       <div
         ref={ref}
@@ -175,6 +179,7 @@ const Box2 = () => {
 
       <img className="path1" src={path} alt="path" />
     </div>
+    </>
   );
 };
 

@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="logo-container" onClick={() => navigate("/")}> 
         <img src={logo} alt="Logo of Website" />
-        <label>Hope</label>
+        {/* <label>BMR Exchange</label> */}
       </div>
       <nav className={menuOpen ? "nav-open" : ""}>
         <ul className="nav-links">

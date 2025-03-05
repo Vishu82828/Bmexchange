@@ -1,8 +1,14 @@
 import React from "react";
 import SplitText from "../SplitText";
 import "../../components/HeroText/HeroText.css";
+import { useNavigate } from "react-router-dom";
 
 const HeroText = () => {
+  const navigate = useNavigate();
+
+  const handleContact = () => {
+      navigate('/contact'); 
+  }
   return (
     <div className="introduction">
       <SplitText
@@ -14,8 +20,8 @@ const HeroText = () => {
         individuals, providing a streamlined and secure payment solution.
       </p>
       <div className="buttons">
-        <button>Work with Us</button>
-        <button>Contact Us</button>
+        <button onClick={handleContact}>Work with Us</button>
+        <button onClick={handleContact}>Contact Us</button>
       </div>
     </div>
   );

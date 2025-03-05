@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-
+import ScrollToTop from "./components/ScrollToTop";
 import "./Styles/App.css";
 import Navbar from "./components/Navbar/navbar.component";
 import Footer from "./components/Footer/footer.component";
@@ -15,6 +15,7 @@ import Home from "./Pages/Home";
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <div className="overlay"></div>
         <div className="image">

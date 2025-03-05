@@ -1,12 +1,18 @@
 import React from "react";
 import "../box2/Box2.css";
-
+import { useNavigate } from "react-router-dom";
 import path from "../../image/path1.svg";
 
 import useWebAnimations, { flip } from "@wellyshen/use-web-animations";
 
 const Box2 = () => {
   const { keyframes = [], timing = {} } = flip || {}; // Ensure `timing` is not undefined
+
+  const navigate = useNavigate();
+
+    const handleReadMore = () => {
+        navigate('/howitwork'); 
+    }
 
   const { ref, getAnimation } = useWebAnimations({
     keyframes,
@@ -40,7 +46,7 @@ const Box2 = () => {
         Our goal is to provide fast, transparent, and convenient financial solutions tailored to your needs.
       </p>
 
-        <button className="readMore">Read more</button>
+        <button className="readMore" onClick={handleReadMore}>Read more</button>
       </div>
       <div
         ref={ref}

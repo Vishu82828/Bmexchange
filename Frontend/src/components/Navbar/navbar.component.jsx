@@ -16,6 +16,7 @@ const Navbar = () => {
       </div>
       <nav className={menuOpen ? "nav-open" : ""}>
         <ul className="nav-links">
+        <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
           <li><Link to="/whyus" onClick={() => setMenuOpen(false)}>Why Us</Link></li>
           <li><Link to="/howitwork" onClick={() => setMenuOpen(false)}>How it Works</Link></li>
           <li><Link to="/crypto" onClick={() => setMenuOpen(false)}>Crypto Exchange</Link></li>

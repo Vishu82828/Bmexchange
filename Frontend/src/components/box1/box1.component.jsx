@@ -1,12 +1,18 @@
 import React from "react";
 import "../box1/Box1.css";
-
+import {useNavigate} from 'react-router-dom'
 import path1 from "../../image/path2.svg";
 
 import useWebAnimations, { tada } from "@wellyshen/use-web-animations";
 
 const Box1 = () => {
   const { keyframes = [], timing = {} } = tada || {}; // Ensure timing is not undefined
+
+    const navigate = useNavigate();
+
+    const handleReadMore = () => {
+        navigate('/whyus'); 
+    }
 
   const { ref, getAnimation } = useWebAnimations({
     keyframes,
@@ -172,7 +178,7 @@ const Box1 = () => {
         Join our community of satisfied clients and experience the difference with our top-notch financial solutions.
       </p>
 
-        <button className="readMore">Read more</button>
+        <button className="readMore" onClick={handleReadMore} >Read more</button>
       </div>
 
       <img className="path2" src={path1} alt="path2" />

@@ -1,9 +1,16 @@
 import React from "react";
 import "../box3/Box3.css";
+import { useNavigate } from "react-router-dom";
 import useWebAnimations, { zoomIn } from "@wellyshen/use-web-animations";
 
 const Box3 = () => {
   const { keyframes = [], timing = {} } = zoomIn || {}; // Ensure `timing` is not undefined
+
+  const navigate = useNavigate();
+
+    const handleReadMore = () => {
+        navigate('/crypto'); 
+    }
 
   const { ref, getAnimation } = useWebAnimations({
     keyframes,
@@ -100,7 +107,7 @@ const Box3 = () => {
           Join thousands of satisfied traders and start your cryptocurrency
           journey with us today.
         </p>
-        <button className="readMore">Read more</button>
+        <button className="readMore" onClick={handleReadMore}>Read more</button>
       </div>
     </div>
   );
